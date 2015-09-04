@@ -1,0 +1,19 @@
+{
+  "name": "hubot-response",
+  "version": "1.0.0",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "HUBOT_RESPONSE_GLOB=test/fixtures/*.json mocha --compilers coffee:coffee-script/register"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "coffee-script": "^1.9.0",
+    "glob": "^5.0.14"
+  },
+  "devDependencies": {
+    "chai": "^2.0.0",
+    "mocha": "^2.0.0",
+    "sinon": "^1.10.0",
+    "sinon-chai": "^2.5.0"
+  }
+}

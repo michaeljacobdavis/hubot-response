@@ -1,0 +1,7 @@
+{
+  "match": "/hear/",
+  "listener": "hear",
+  "responses": [
+    "hear"
+  ]
+}
