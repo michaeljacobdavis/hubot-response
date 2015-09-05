@@ -1,3 +1,17 @@
+## Hubot Response
+
+Makes writing hubot scripts as easy as
+
+```
+{
+  "match": "Hello",
+  "listener": "hear",
+  "response": [
+    "World!"
+  ]
+}
+```
+
 ## TL;DR
 
 **Install**
