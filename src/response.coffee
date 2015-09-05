@@ -19,5 +19,8 @@ module.exports = (robot) ->
     robot[config.listener] config.match, (msg) ->
       msg.send msg.random config.responses
 
+  registerListeners = (config, robot) ->
+    createListener entry, robot for entry in config
+
   files = require('glob').sync(process.env.HUBOT_RESPONSE_GLOB)
-  createListener require(path.resolve(config)), robot for config in files
+  registerListeners require(path.resolve(config)), robot for config in files

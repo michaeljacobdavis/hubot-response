@@ -13,7 +13,7 @@ describe 'hubot-response', ->
     require('../src/response')(@robot)
 
   it 'registers a hear listener', ->
-    expect(@robot.hear).to.have.been.called
+    expect(@robot.hear).to.have.been.calledTwice
 
   it 'registers a respond listener', ->
-    expect(@robot.respond).to.have.been.called
+    expect(@robot.respond).to.have.been.calledOnce
