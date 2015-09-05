@@ -2,14 +2,14 @@ module.exports = [
   {
     "match": "hear",
     "listener": "hear",
-    "responses": [
+    "response": [
       "hear"
     ]
   },
   {
     "match": "blah",
     "listener": "hear",
-    "responses": [
+    "response": [
       "blah"
     ]
   }

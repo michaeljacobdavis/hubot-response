@@ -1,9 +1,7 @@
-[
-  {
-    "match": "respond",
-    "listener": "respond",
-    "responses": [
-      "respond"
-    ]
-  }
-]
+{
+  "match": "respond",
+  "listener": "respond",
+  "response": [
+    "respond"
+  ]
+}

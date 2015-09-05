@@ -1,9 +1,0 @@
-[
-  {
-    "match": "respond",
-    "listener": "respond",
-    "responses": [
-      "respond"
-    ]
-  }
-]

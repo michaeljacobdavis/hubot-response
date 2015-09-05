@@ -1,0 +1,7 @@
+{
+  "match": "Hello",
+  "listener": "hear",
+  "response": [
+    "World!"
+  ]
+}
