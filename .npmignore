@@ -1,3 +1,5 @@
 node_modules
 *.log
+.hubot_history
 example
+test

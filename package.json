@@ -14,7 +14,7 @@
   "devDependencies": {
     "chai": "^2.0.0",
     "hubot": "^2.16.0",
-    "lodash.merge": "^3.3.2",
+    "hubot-response-applause": "^1.0.1",
     "mocha": "^2.0.0",
     "sinon": "^1.10.0",
     "sinon-chai": "^2.5.0"
