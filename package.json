@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.coffee",
   "scripts": {
-    "test": "HUBOT_RESPONSE_GLOB=test/fixtures/*.json mocha --compilers coffee:coffee-script/register"
+    "test": "HUBOT_RESPONSE_GLOB=test/fixtures/*.* mocha --compilers coffee:coffee-script/register"
   },
   "license": "MIT",
   "dependencies": {

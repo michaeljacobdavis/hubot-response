@@ -1,17 +1,3 @@
-# Description:
-#
-# Dependencies:
-#   None
-#
-# Configuration:
-#   None
-#
-# Commands:
-#
-# Notes
-#
-# Author:
-
 path = require('path')
 
 module.exports = (robot) ->

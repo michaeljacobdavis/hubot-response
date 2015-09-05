@@ -1,16 +1,16 @@
-[
+module.exports = [
   {
-    "match": "/hear/",
+    "match": "hear",
     "listener": "hear",
     "responses": [
       "hear"
     ]
   },
   {
-    "match": "/blah/",
+    "match": "blah",
     "listener": "hear",
     "responses": [
       "blah"
     ]
   }
-]
+];
