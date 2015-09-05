@@ -5,7 +5,7 @@
   "description": "Makes creating hubot responses easy.",
   "scripts": {
     "test": "HUBOT_RESPONSE_GLOB=test/fixtures/*.* mocha --compilers coffee:coffee-script/register",
-    "start": "HUBOT_RESPONSE_GLOB=examples/*.* hubot --name bender $@"
+    "start": "HUBOT_RESPONSE_GLOB=examples/*.* hubot --name hubot $@"
   },
   "license": "MIT",
   "dependencies": {

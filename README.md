@@ -44,7 +44,20 @@ Create a `responses` directory. Create `mysweetresponse.json` and add
 
 Now when hubot hears `Hello` in the room, it replies back with `World!`. Run `npm start` to try it out!
 
-Checkout more [examples](blob/master/examples/).
+Checkout more [examples](examples/).
+
+## Environment Variables
+`HUBOT_RESPONSE_GLOB` - [`Glob`](https://github.com/isaacs/node-glob) of where to look for responses. Defaults to `responses/*.*`
+
+## How to use
+Hubot Response can read anything that can be `reqire`-ed as an object. So `json`, `js`, `coffee` files all work.
+
+The file should export either an object for [**one** response](examples/hello-world.json), or an array for [**multiple** responses](examples/multiple.coffee).
+
+Each response object should consist of:
+- `match` - Either a string that is turned into a regex, or an actual instance of `RegExp` that the robot is listening for.
+- `listener` - Either [`hear` or `respond`](https://github.com/github/hubot/blob/master/docs/scripting.md#hearing-and-responding).
+- `response` - Can be a `String`, `Function` that is called, or an `Array` where an index is randomly selected.
 
 ## Don't we already have [a way of doing this](https://github.com/hubot-scripts)?
 Yes, and the [hubot-scripts](https://github.com/hubot-scripts) org is awesome! But for simple hear and respond modules (animated gifs mostly) customization sucks...
@@ -60,7 +73,4 @@ None of these are really clean.
 
 #### Solution
 
-Since response files are just an object, we can extend however we want. You can see an example of this in the [extension example](blob/master/examples/extension.js).
-
-## Environment Variables
-`HUBOT_RESPONSE_GLOB` - [`Glob`](https://github.com/isaacs/node-glob) of where to look for responses. Defaults to `responses/*.*`
+Since response files are just an object, we can extend however we want. You can see an example of this in the [extension example](examples/extension.js).
