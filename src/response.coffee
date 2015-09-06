@@ -1,3 +1,6 @@
+# Configuration:
+#   HUBOT_RESPONSE_GLOB
+
 path = require 'path'
 glob = require 'glob'
 
