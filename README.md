@@ -72,7 +72,7 @@ npm start
 
 This will run a local hubot-shell. You can interact with the [examples](examples/).
 
-**Protip**: Run `hubot-help` for a list of available commands.
+**Protip**: Run `hubot help` for a list of available commands.
 
 ## Don't we already have [a way of doing this](https://github.com/hubot-scripts)?
 Yes, and the [hubot-scripts](https://github.com/hubot-scripts) org is awesome! But for simple hear and respond modules (animated gifs mostly) customization sucks...
