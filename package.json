@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "main": "index.coffee",
   "description": "Makes creating hubot responses easy.",
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "response"
+  ],
   "scripts": {
     "test": "HUBOT_RESPONSE_GLOB=test/fixtures/*.* mocha --compilers coffee:coffee-script/register",
     "start": "HUBOT_RESPONSE_GLOB=examples/*.* hubot --name hubot $@"
