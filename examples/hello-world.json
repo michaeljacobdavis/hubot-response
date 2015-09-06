@@ -1,5 +1,6 @@
 {
   "match": "Hello",
+  "description": "hello - finish hello world!",
   "listener": "hear",
   "response": [
     "World!"

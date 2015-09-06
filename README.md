@@ -5,6 +5,7 @@ Makes writing hubot scripts as easy as
 ```
 {
   "match": "Hello",
+  "description": "hello - finish hello world!",
   "listener": "hear",
   "response": [
     "World!"
@@ -35,6 +36,7 @@ Create a `responses` directory. Create `mysweetresponse.json` and add
 ```
 {
   "match": "Hello",
+  "description": "hello - finish hello world!",
   "listener": "hear",
   "response": [
     "World!"
@@ -56,8 +58,21 @@ The file should export either an object for [**one** response](examples/hello-wo
 
 Each response object should consist of:
 - `match` - Either a string that is turned into a regex, or an actual instance of `RegExp` that the robot is listening for.
+- `description` - Entry for hubot commands. Use this to display with `hubot-help`. See [Commands](https://github.com/github/hubot/blob/master/docs/scripting.md#documenting-scripts) for formatting.
 - `listener` - Either [`hear` or `respond`](https://github.com/github/hubot/blob/master/docs/scripting.md#hearing-and-responding).
 - `response` - Can be a `String`, `Function` that is called, or an `Array` where an index is randomly selected.
+
+## Try before you buy
+Clone this locally and run
+
+```
+npm install
+npm start
+```
+
+This will run a local hubot-shell. You can interact with the [examples](examples/).
+
+**Protip**: Run `hubot-help` for a list of available commands.
 
 ## Don't we already have [a way of doing this](https://github.com/hubot-scripts)?
 Yes, and the [hubot-scripts](https://github.com/hubot-scripts) org is awesome! But for simple hear and respond modules (animated gifs mostly) customization sucks...

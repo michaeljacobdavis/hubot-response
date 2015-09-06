@@ -1,5 +1,6 @@
 {
   "match": "respond",
+  "description": "respond",
   "listener": "respond",
   "response": [
     "respond"

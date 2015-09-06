@@ -1,6 +1,7 @@
 module.exports = [
   {
     "match": "hear",
+    "description": "hear",
     "listener": "hear",
     "response": [
       "hear"
