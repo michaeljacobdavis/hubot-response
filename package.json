@@ -1,6 +1,6 @@
 {
   "name": "hubot-response",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.coffee",
   "description": "Makes creating hubot responses easy.",
   "keywords": [
