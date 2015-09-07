@@ -26,5 +26,13 @@
     "mocha": "^2.0.0",
     "sinon": "^1.10.0",
     "sinon-chai": "^2.5.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaeljacobdavis/hubot-response.git"
+  },
+  "bugs": {
+    "url": "https://github.com/michaeljacobdavis/hubot-response/issues"
+  },
+  "homepage": "https://github.com/michaeljacobdavis/hubot-response#readme"
 }
