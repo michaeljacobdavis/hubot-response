@@ -28,7 +28,7 @@ module.exports = (robot) ->
       if typeof config.response is 'string'
         return msg.send config.response
       else if typeof config.response is 'function'
-        return msg.send config.response.call(this, msg, config, robot)
+        return config.response.call(this, msg, config, robot)
       else if Array.isArray(config.response)
         return msg.send msg.random config.response
 
